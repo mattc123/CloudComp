@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CM4108 Coursework</title>
+		<!-- *** Load the jQuery and jQueryUI libraries here. *** -->		
+	  	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+		<!-- *** Load jQueryUI default CSS from Google CDN. *** -->
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+
+		<!--  Load the LeafletJS API. -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin=""></script>
+
+		<!-- Load local CSS and JavaScript. -->
+ 		<link rel="stylesheet" href="css/index.css">
+		<script src="script/index.js"></script>
+	</head>
+	<body>
+		<section>
+			<h1>Friend Finder</h1>
+			<!-- Initially the list is empty. We will construct it using Ajax. -->
+
+			<section>
+				ID:
+				<input type="text" id="myid">
+				<button id="Go">Go!</button>
+			</section>
+			
+		</section>
+		
+		<!-- Section for entering details of a new city. -->
+		<section id="locationDetails">
+			<h1>Check in</h1>
+			<section>
+				Longitude:
+				<input type="text" id="long">
+				Latitude:
+				<input type="text" id="lat">
+				
+				<!-- Buttons for adding and deleting a city. -->
+				<button id="checkin">Check In</button>
+			</section>
+		</section>
+
+		<section id = "friends">
+			<h1>Friends Subscribed</h1>
+			<ul id="locations">
+			</ul>
+				
+			<button id="refresh">refresh</button>
+		</section>
+			
+			<!-- Section for showing Google Map. Empty for the moment. It will be populated by JS. -->
+			<section id="map">
+			</section>
+			
+			
+		<section>
+			<h1>Request Subscription</h1>
+			<!-- Initially the list is empty. We will construct it using Ajax. -->
+			
+		</section>
+		
+		<section>
+			 Send Request to:
+			<input type="text" id="friendreq">
+			<button id="send">Send Request</button>
+		</section>
+			
+			
+		<section>
+			<h1>Incoming Request(s)</h1>
+			<section>
+			<button id="freq">Refresh</button>
+			<ul id="requests">
+			</ul>
+			<button id="app">Approve</button>
+			<button id="deny">Deny</button>
+			
+			</section>
+			
+		</section>
+			
+				
+		
+	</body>
+</html>
